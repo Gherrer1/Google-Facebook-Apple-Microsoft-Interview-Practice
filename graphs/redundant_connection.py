@@ -11,9 +11,7 @@ class UnionFind(object):
     def is_redundant(self, x, y):
         parent1 = self.parent[x]
         parent2 = self.parent[y]
-        if parent1 == parent2:
-            return True
-        return False
+        return parent1 == parent2
 
     def union(self, x, y):
         parent1 = self.parent[x]
